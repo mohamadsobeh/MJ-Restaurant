@@ -28,7 +28,7 @@ export default function ContactSectionHome() {
       message: "",
     },
   });
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (data: any) => {
     const res = await fetch("https://formspree.io/f/meozjyop", {
       method: "POST",

@@ -106,9 +106,9 @@ export default function AboutPage() {
       <section className="bg-zinc-900 py-24 px-4">
         <div className="container mx-auto text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-yellow-500">Why Our Guests Keep Coming Back</h3>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            We're not just a restaurant — we're a culinary destination rooted in authenticity and care. Here's why guests choose MJ again and again:
-          </p>
+         <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+  We&apos;re not just a restaurant — we&apos;re a culinary destination rooted in authenticity and care. Here&apos;s why guests choose MJ again and again:
+</p>
         </div>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {features.map(({ icon: Icon, title, desc }, index) => (
