@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -84,12 +85,14 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
         >
-          <Button
-            variant="outline"
-            className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black px-10 py-3 text-base font-semibold shadow-md transition rounded-none uppercase tracking-wide focus:ring-2 ring-yellow-500"
-          >
-            View Our Menu
-          </Button>
+          <Link href="/menu">
+            <Button
+              variant="outline"
+              className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black px-10 py-3 text-base font-semibold shadow-md transition rounded-none uppercase tracking-wide focus:ring-2 ring-yellow-500"
+            >
+              View Our Menu
+            </Button>
+          </Link>
         </motion.div>
       </div>
 
